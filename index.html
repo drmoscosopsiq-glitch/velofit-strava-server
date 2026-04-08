@@ -1535,7 +1535,7 @@ function openGoogleMaps(){window.open('https://maps.google.com/?q=Santiago+de+lo
 
 /* ── STRAVA (se activa el 1 de mayo cuando se reseteen los tokens de Netlify) ── */
 var STRAVA_CLIENT_ID='220969';
-var STRAVA_REDIRECT=window.location.origin+'/strava-callback';
+var STRAVA_REDIRECT='https://velofit-strava.onrender.com/strava-callback';
 function getStrava(){return sGet('vfa_strava',null);}
 function saveStrava(v){sSet('vfa_strava',v);}
 function clearStrava(){sSet('vfa_strava',null);}
